@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAGAZINE — Digital Magazine</title>
+<meta name="description" content="A modern digital magazine reader.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="./">MAGAZINE<span>.</span></a><nav><a href="#latest">Latest</a><a href="#library">Library</a><a class="admin-link" href="admin.html">Admin</a></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow">DIGITAL EDITION</p><h1>Stories worth<br><em>turning pages for.</em></h1><p class="hero-copy">A clean, immersive home for your magazines. Upload pages, arrange editions and let readers explore them one page at a time.</p><a class="button" href="#library">Explore magazines →</a></div><div class="hero-art"><div class="cover"><small>VOL. 01</small><strong>THE<br>NEW<br>ERA</strong><span>MAGAZINE.</span></div></div></section>
+<section id="latest" class="section"><div class="section-head"><div><p class="eyebrow">FEATURED</p><h2>Latest edition</h2></div></div><article class="featured" id="featured"><div class="feature-cover"><span>ISSUE 01</span><b>THE<br>NEW<br>ERA</b><small>2026</small></div><div class="feature-info"><p class="eyebrow">DIGITAL MAGAZINE</p><h3>The New Era</h3><p>A sample edition is ready to show you how the reader works. Your own uploaded editions will appear here automatically.</p><button class="button" onclick="openDemo()">Read edition →</button></div></article></section>
+<section id="library" class="section"><div class="section-head"><div><p class="eyebrow">LIBRARY</p><h2>Magazine shelf</h2></div></div><div id="magazines" class="grid"></div></section>
+</main>
+<footer>MAGAZINE. <span>Digital publishing, made simple.</span></footer>
+<div id="reader" class="reader hidden"><button class="close" onclick="closeReader()">×</button><div class="reader-top"><span id="readerTitle">The New Era</span><span id="counter">1 / 1</span></div><div class="page-wrap"><img id="pageImage" alt="Magazine page"><div id="pagePlaceholder"></div></div><div class="reader-controls"><button onclick="prevPage()">←</button><button onclick="nextPage()">→</button></div></div>
+<script src="app.js"></script>
+</body></html>
